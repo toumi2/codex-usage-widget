@@ -31,14 +31,14 @@ The app asks the locally installed Codex CLI app-server for account rate limits.
 Requirements: macOS 13 or later, Swift 5.9 or later, and a signed-in Codex CLI installation.
 
 ```sh
-./scripts/build-app.sh
+bash ./scripts/build-app.sh
 open "build/Codex Usage.app"
 ```
 
 To make a local universal release archive:
 
 ```sh
-./scripts/release-macos.sh 1.0.0
+bash ./scripts/release-macos.sh 1.0.0
 ```
 
 The archive and SHA-256 checksum are written to `build/release/`. GitHub Actions runs the same release script and attaches these files when a GitHub Release is published for a `v*` tag.
