@@ -19,9 +19,9 @@ X86_APP="$X86_OUTPUT/$APP_NAME"
 UNIVERSAL_APP="$BUILD_ROOT/universal/$APP_NAME"
 
 APP_VERSION="$VERSION" BUILD_ARCH="arm64-apple-macosx13.0" APP_OUTPUT_ROOT="$ARM64_OUTPUT" \
-    "$ROOT/scripts/build-app.sh"
+    bash "$ROOT/scripts/build-app.sh"
 APP_VERSION="$VERSION" BUILD_ARCH="x86_64-apple-macosx13.0" APP_OUTPUT_ROOT="$X86_OUTPUT" \
-    "$ROOT/scripts/build-app.sh"
+    bash "$ROOT/scripts/build-app.sh"
 
 mkdir -p "$UNIVERSAL_APP/Contents/MacOS" "$RELEASE_DIR"
 ditto "$ARM64_APP" "$UNIVERSAL_APP"
