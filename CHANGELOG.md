@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1 — 2026-09-26
+
+- Fix hosted universal release builds and keep the published tag buildable from source.
+
 ## 1.0.0 — 2026-09-26
 
 - Floating, transparent widget for weekly and five-hour remaining Codex quota.
