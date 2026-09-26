@@ -41,7 +41,7 @@ To make a local universal release archive:
 ./scripts/release-macos.sh 1.0.0
 ```
 
-The archive and SHA-256 checksum are written to `build/release/`. GitHub Actions runs the same release script and publishes these files when a `v*` version tag is pushed.
+The archive and SHA-256 checksum are written to `build/release/`. GitHub Actions runs the same release script and attaches these files when a GitHub Release is published for a `v*` tag.
 
 ## License
 
